@@ -1,0 +1,14 @@
+<h1>A list of our restaurants!</h1>
+<% @restaurants.each do |restaurant| %>
+<br>
+<div class="flex">
+  <div>
+      <h3><%= restaurant.name %></h3>
+      <h5><%= restaurant.category %></h5>
+      <h5><%= restaurant.address %></h5>
+      <br>
+  </div>
+  <br>
+  <br>
+</div>
+<% end %>
